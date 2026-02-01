@@ -1,6 +1,10 @@
+import csv
 with open("weather_data.csv") as file:
-    content = file.readlines()
-
-print(content)
+    contents = csv.reader(file)
+    for row in file:
+        contents.append(row)
         
+print(contents)
+        
+
 
