@@ -1,3 +1,4 @@
+'''
 import csv
 with open("weather_data.csv") as file:
     contents = []
@@ -6,8 +7,14 @@ with open("weather_data.csv") as file:
         contents.append(row)
         
 print(contents)
-        
+'''       
 
+#using pandas 
+
+import pandas
+
+contents = pandas.read("weather_data.csv")
+print(contents)
 
 
 
