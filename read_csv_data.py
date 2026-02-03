@@ -19,7 +19,10 @@ print(contents)
 temp_list = data["temp"].to_list()
 print(temp_list)
 
-for data in temp_list:
+# average of temperature
+
+print(sum(temp_list)/len(temp_list))
     
+
 
 
