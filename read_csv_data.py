@@ -23,6 +23,11 @@ print(temp_list)
 
 print(sum(temp_list)/len(temp_list))
     
+#average using pandas 
 
+print(data["temp"].mean())
 
+#max of temperatures
+
+print(data["temp"].max())
 
