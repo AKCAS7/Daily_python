@@ -17,6 +17,9 @@ contents = pandas.read("weather_data.csv")
 print(contents)
 
 temp_list = data["temp"].to_list()
+print(temp_list)
 
+for data in temp_list:
+    
 
 
