@@ -44,8 +44,9 @@ with open("weather_data.csv") as data_file:
 
 # USING PANDAS
 
-import pandas
-data = pandas.reader_csv("weather_data.csv")
+import pandas as pd
+data = pd.read_csv("weather_data.csv")
 print(data)
+
 
 
