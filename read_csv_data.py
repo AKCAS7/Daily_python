@@ -42,3 +42,10 @@ with open("weather_data.csv") as data_file:
             temperatures.append(int(row[1]))
     print(temperatures)
 
+# USING PANDAS
+
+import pandas
+data = pandas.reader_csv("weather_data.csv")
+print(data)
+
+
