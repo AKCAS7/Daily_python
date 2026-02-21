@@ -45,8 +45,23 @@ with open("weather_data.csv") as data_file:
 # USING PANDAS
 
 import pandas as pd
+
 data = pd.read_csv("weather_data.csv")
-print(data)
+
+'''
+data_dict = data.to_dict()
+print(data_dict)
+
+temp_list = data["temp"].to_list()
+print(temp_list)
+
+print(data["temp"].mean())
+print(data["temp"].max())
+
+print(data["condition"])
+'''
+max_temp = data["temp"].max()
+print(data[data.temp == max_temp])
 
 
 
