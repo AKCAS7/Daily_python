@@ -60,8 +60,13 @@ print(data["temp"].max())
 
 print(data["condition"])
 '''
-max_temp = data["temp"].max()
-print(data[data.temp == max_temp])
+# max_temp = data["temp"].max()
+# print(data[data.temp == max_temp])
 
+monday = data[data.day = "Monday"]
 
+celsius = monday.temp
+fahrenhiet = ( celsius*1.8 ) + 32
+
+print(fahrenhiet)
 
