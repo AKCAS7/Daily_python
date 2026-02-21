@@ -46,7 +46,7 @@ with open("weather_data.csv") as data_file:
 
 import pandas as pd
 
-data = pd.read_csv("weather_data.csv")
+# data = pd.read_csv("weather_data.csv")
 
 '''
 data_dict = data.to_dict()
@@ -63,10 +63,21 @@ print(data["condition"])
 # max_temp = data["temp"].max()
 # print(data[data.temp == max_temp])
 
-monday = data[data.day = "Monday"]
+#monday = data[data.day = "Monday"]
 
-celsius = monday.temp
-fahrenhiet = ( celsius*1.8 ) + 32
+#celsius = monday.temp
+#fahrenhiet = ( celsius*1.8 ) + 32
 
-print(fahrenhiet)
+#print(fahrenhiet)
+
+
+data_dict = {
+    "student": ["John", "david", "kevin"],
+    "scores": [ 79,80,81]
+    }
+
+data = pandas.DataFrame(data_dict)
+
+print(data)
+data.to_csv("new_data.csv")
 
