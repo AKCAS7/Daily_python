@@ -14,7 +14,7 @@ states = data.state.to_list()
 guessed_states = []
 
 while len(guessed_states) < 50:
-    answer_state = screen.textinput(title = " Guess the state ", prompt = " What is the states name ? ")
+    answer_state = screen.textinput(title = f{"len(guessed_states)/50 States Correct ", prompt = " What is the states name ? ").title()
     
     if answer_state in states:
         guessed_states.append(answer_state)
@@ -31,6 +31,7 @@ while len(guessed_states) < 50:
 
 
 screen.exitonclick()
+
 
 
 
