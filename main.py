@@ -1,12 +1,17 @@
 import turtle
+import pandas
 
 screen = turtle.Screen()
 screen.title("US States Game")
 image = "blank_states_img.gif"
-
 screen.addshape(image)
 turtle.shape(image)
 
+
+data = pandas.read_csv("50_states.csv")
+states = data.state.to_list()
+
+guessed_states = []
 
 while len(guessed_states) < 50:
     answer_state = screen.textinput(title = " Guess the state ", prompt = " What is the states name ? ")
@@ -20,11 +25,12 @@ while len(guessed_states) < 50:
         t.goto(state_data.x.item(), state_data.y.item())
         t.write(answer_state)
 
-
-
+    
 
 
 
 
 screen.exitonclick()
+
+
 
