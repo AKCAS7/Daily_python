@@ -1,0 +1,7 @@
+#List comprehension
+#new_list = [new_item for item in list]
+
+numbers = [1,2,3]
+new_list = [ n+3 for n in numbers]
+
+print( new_list )
